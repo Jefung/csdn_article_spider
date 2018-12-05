@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# comment: 下载图片以及保存文章到sqlite数据库
 
 # Define your item pipelines here
 #

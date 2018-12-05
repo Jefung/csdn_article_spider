@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
+# comment: CSDN爬虫类
 import scrapy
-from csdn_spider.items import ArticleItem,ImageItem
+from csdn_spider.items import ArticleItem, ImageItem
 import re
 
 
 class CsdnSpider(scrapy.Spider):
     name = 'csdn'
-    # allowed_domains = ['https://blog.csdn.net/']
     keyword = "区块链"
-
-    # start_urls = ['https://so.csdn.net/so/search/s.do?p=1&q=%E5%8C%BA%E5%9D%97%E9%93%BE&t=blog']
 
     def start_requests(self):
         url = "https://so.csdn.net/so/search/s.do?q={keyword}&t={type}&p=".format(keyword="区块链", type="blog")
@@ -58,5 +56,5 @@ class CsdnSpider(scrapy.Spider):
             for i in range(0, len(ls)):
                 if i % 2 != 0 and ls[i].find(self.keyword) != -1:
                     # pattern = "https://blog.csdn.net/jwter87/article/details/53423634"
-                    id = re.findall(r"article\/details\/(\d+)", ls[i-1])[0]
-                    yield scrapy.Request(ls[i-1], meta={"id": id},callback=self.parse_blog_article)
+                    id = re.findall(r"article\/details\/(\d+)", ls[i - 1])[0]
+                    yield scrapy.Request(ls[i - 1], meta={"id": id}, callback=self.parse_blog_article)

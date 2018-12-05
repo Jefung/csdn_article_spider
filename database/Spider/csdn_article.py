@@ -1,3 +1,4 @@
+# comment: 存储CSDN文章表的操作类
 from sqlalchemy import *
 from sql_factory.base_table import BaseTable
 

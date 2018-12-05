@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# comment: 数据结构item, 用于组件间传递通信
+
 
 # Define here the models for your scraped items
 #
@@ -7,11 +9,6 @@
 
 import scrapy
 
-
-class CsdnSpiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
 
 
 class ArticleItem(scrapy.Item):

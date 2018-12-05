@@ -1,3 +1,4 @@
+# comment: 数据库工厂, 生产表实例
 import conf
 from sql_factory import SqliteFactory
 

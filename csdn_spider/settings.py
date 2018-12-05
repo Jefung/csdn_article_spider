@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# comment: scrapy爬虫的自带配置文件
 
 # Scrapy settings for csdn_spider project
 #
