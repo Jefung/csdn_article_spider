@@ -26,6 +26,8 @@
 
 ## 如何运行
 * 安装依赖: 在项目根目录下运行`pip install -r requirements.txt`
+* 配置: 在配置文件 [conf.py](conf.py) 中配置数据库文件存放,图片目录,用于后续的
+[GUI显示爬取CSDN文章](https://github.com/Jefung/csdn_article_show)的使用
 * 运行: `python run_spider.py`
 
 ## 爬虫思路
