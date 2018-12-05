@@ -1,0 +1,9 @@
+# Python:
+.idea
+__pycache__
+
+# sqlite db
+sqlite.db
+
+# images that spider generate
+images
